@@ -6,7 +6,6 @@ path_name = Path.cwd()
 names = list(Path(path_name).glob('*.jpg'))
 Path('new_path').mkdir(parents=True, exist_ok=True)
 
-print(names)
 for file in names:
     with Image.open(file) as img:
         img.load()
